@@ -3,10 +3,7 @@ import java.util.NoSuchElementException;
 public class TRAI_21_X7_ellikau<E> implements TRAI_21_X7<E> {
 
     /**
-     * ITSEARVIOINTI TÃ„HÃ„N:
-     * Mukava tehtävä, kun sai miettiä vähän syvemmälle että miten se taulukko oikeasti toimii. Avasi vähän
-     * käsitystä myös valmiista metodeista. Suht helppo tehtävä ja koin onnistuvani ihan tuntiesimerkkien
-     * ja diojen avulla.
+     * 
      * Lisäysoperaation aikavaativuusluokka on vakio O(1), ellei tarvitse tuplata taulukon kokoa. Taulukon
      * tuplaamiselle tein erillisen metodin, joka on lineaarista kertaluokkaa O(n) suorittaa, koska joudumme tallen-
      * tamaan listan alkiot uuteen listaan järjestyksessä, joka vie lineaarisen ajan. Tätä voisi varmaan
