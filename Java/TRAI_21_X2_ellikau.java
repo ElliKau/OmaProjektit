@@ -3,13 +3,7 @@ import java.util.*;
 public class TRAI_21_X2_ellikau implements TRAI_21_X2 {
 
     /**
-     * ITSEARVIONTI TÃ„HÃ„N:
-     *  Totta puhuen tämä oli vaikein tehtävä mitä ikinä ohjelmoinnissa tehnyt vaikka idea on hyvin simppeli.
-     *  Tehtävää on rassattu 4+ tuntia enkä saanut sitä toimivaksi, tai ajamaan loppuun asti virheittä.
-     *  Joillakin kerroilla pääsin lyhyisiin listoihin asti ja joskus se tyssäsi heti ensimmäiseen listapariin.
-     *  Erilaisia versioita olen kokeillut kymmenisen kappaletta, käyttäen erillisä while ja for looppeja,
-     *  kokeilemalla .equals metodia ja iteraattoria, ja päädyin lopulta siihen minkä tiedän parhaiten eli
-     *  ihan vain n^2 ratkaisu simppeleillä tarkistuksilla. En ole tyytyväinen tuotokseeni.
+     * n^2 ratkaisu simppeleillä tarkistuksilla. En ole tyytyväinen tuotokseeni.
      *
      */
     /**

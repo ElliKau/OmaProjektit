@@ -4,11 +4,6 @@ import java.util.Set;
 public class TRAI_21_X5_ellikau implements TRAI_21_X5 {
 
     /**
-     * ITSEARVIOINTI TÃ„HÃ„N:
-     *
-     * Yllätin itseni kun sain vastauksen tehtyä alle kahteen tuntiin, mikä on tämänhetkinen ennätys.
-     * Setit tuntuvat helpommilta kuin muu tähänastinen, varmaan sen takia koska saa käyttää .contains()
-     * metodia mikä oikaisee aika paljon siitä ehtojen asettelusta. Antaisin itselleni arvosanan 9/10 ratkaisusta.
      *
      * Aikavaativuus on lineaarinen O(n), koska joukoilla ja etenkin hashsetillä addAll() on lineaarinen, ja
      * koko S1+S2+S3 lista käydään vain kerran läpi. Contains operaatiot ovat joukoilla nopeampia ja keskimäärin

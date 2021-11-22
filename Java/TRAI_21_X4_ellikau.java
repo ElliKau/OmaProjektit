@@ -4,15 +4,7 @@ import fi.uef.cs.tra.BTreeNode;
 public class TRAI_21_X4_ellikau implements TRAI_21_X4 {
 
     /**
-     * ITSEARVIOINTI TÃ„HÃ„N:
-     *
-     * Taas yksi omalle logiikalle haastava tehtävä, eka osio sujui hyvin mutta en pysty löytämään
-     * sitä yleistä logiikkaa tehtäviin mitä haetaan, ja siksi ratkaisuni ovat hirveän monimutkaisia
-     * ja eivät lopulta toimi oikein. ratkaisuni on kauheaa koodia ja if-else viidakko ja pyörii ikuisesti
-     * virheen takia. Ohjaustunnilla Ville kehotti miettimään uusiksi tokakohdan mutta
-     * en jaksa aloittaa uudestaan neljättä kertaa ja sen suuren tuntimäärän takia jonka olen jo käyttänyt tähän
-     * _yhteen_ tehtävään. Olen niin perusteellisen turhautunut siihen etten ymmärrä logiikkaa tehtävien takana.
-     * Aikavaativuus ekan tehtävän kohdalta 2 * logn + 3 = O(logn)
+     *  Aikavaativuus ekan tehtävän kohdalta 2 * logn + 3 = O(logn)
      * Isomman tehtävän kohdalla lähin arvaukseni on 6 * logn + 10 = O(logn)
      * // TODO virhe numeroissa 39-47, pyörii 2 solmua syvässä loopissa ikuisesti
      */

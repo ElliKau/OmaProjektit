@@ -3,10 +3,7 @@ import java.util.*;
 public class TRAI_21_X6_ellikau implements TRAI_21_X6 {
 
     /**
-     * ITSEARVIOINTI TĆ„HĆ„N:
      *
-     * Tehtävä onnistui aika kivuttomasti. Mapeissa on omaan järkeen käyviä metodeita ja iterointi on yksin-
-     * kertaisempaa.
      * Aikavaativuudeksi arvioin O(n). Lisäämme apulistaan alkiot mitkä esiintyvät
      * seteissä, ottaa O(n) ajan. Iteroidaan setti läpi (n) ja etsitään foreach- loopin ja contains metodin
      * avulla sisöltääkö kukin setti SS setissä kyseistä alkiota. .contains ottaa vakioajan.

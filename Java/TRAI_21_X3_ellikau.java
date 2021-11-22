@@ -5,11 +5,6 @@ public class TRAI_21_X3_ellikau implements TRAI_21_X3 {
     //  ^^^^^ oma tunnus tÃ¤hÃ¤n
 
     /**
-     * ITSEARVIOINTI TÃ„HÃ„N:
-     *
-     * Iteraattorin käyttäminen on itselle aivan uutta asiaa ja suht haastavaa, kun sitä ei
-     * tunnilla käydä mitenkään erikoisemmin läpi. Ongelmia on viimeisten alkioiden tarkastuksissa,
-     * mutta onnistuin tällä kertaa tekemään lineaarisen ratkaisun eli parempaan päin?
      * Aikavaativuus olisi suurinpiirtein 2 * n + 2= eli O(n).
      *
      */
@@ -27,7 +22,7 @@ public class TRAI_21_X3_ellikau implements TRAI_21_X3 {
      * poistoa. Toki taas uudessa esiintymässä duplikaatit poistetaan. Jäljelle jäävät alkiot säilyttävät
      * järjestyksensä. Algoritmi palauttaa poistettujen alkioiden määrän. Listasta (e, a, a, i, i,
      * c, c, c, a, a, c) tulee siis lista (e, a, i, c, a, c). Täysiin pisteisiin algoritmisi pitää pystyä
-     * käsittelemään myös null alkiot kuten muutkin alkiot. Siis useammasta peräkkäisestä null alkiosta
+     * käsittelemään myös null alkiot kuten muutkin alkiot. Siis useammasta peräkkäisestä null alkiosta
      * vain ensimmäinen jää, muut poistetaan. Koska nyt harjoitellaan ListIterator:in käyttöä, et
      * saa käyttää apuna joukkoa/kuvausta, alkiovirtoja (Stream) etkä tekniikkaa jossa säilytettävät
      * alkiot kopioidaan toiseen listaan tai muuhun kokoelmaan, tyhjennetään alkuperäinen lista ja
