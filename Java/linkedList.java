@@ -11,11 +11,7 @@ public class teht10_ellikau {
          * 10. Kirjoita tehokas algoritmi joka saa parametrinaan kaksi kasvavassa järjestyksessä olevaa
          * linkitettyä listaa (java.util.LinkedList A, B) ja joka lisää listaan A kaikki listan B alkiot
          * siten, että lisäysten jälkeen lista A on edelleen järjestyksessä. Listaa B ei muuteta.
-         * Voit olettaa ettei listoissa ole null alkioita. Koska nyt harjoittelemme
-         * ListIterator:n käyttöä, et saa
-         * käyttää valmista addAll() -operaatiota, lajittelua, joukko/kuvausrakenteita (Set/Map) tai
-         * alkiovirtaa (Stream) apuna. Mikä on algoritmisi aikavaativuus? Hyödynnä listojen kasvavaa
-         * järjestystä saadaksesi algoritmista tehokkaan
+         * Voit olettaa ettei listoissa ole null alkioita.
          */
 
         LinkedList<Integer> L1 = new LinkedList<>();
@@ -48,9 +44,8 @@ public class teht10_ellikau {
 
         int i = 0;
         while(k.hasNext()){
-            //TODO
             // niin kauan kuin B:ssä on alkioita
-            // käydään läpi A:ta niin että Bn alkio on >A.prev mutta <A.next, jollois .add
+            // käydään läpi A:ta niin että Bn alkio on >A.prev mutta <A.next, jolloin .add
             Object o = h.next();
             Object p = k.next();
 

@@ -42,7 +42,7 @@ public class TRAI_21_18_ellikau {
 
 
     /**
-     * 18. Kirjoita algoritmi joka hakee joukkojen â€kaksi kolmestaâ€ leikkauksen. Algoritmi saa
+     * Kirjoita algoritmi joka hakee joukkojen â€kaksi kolmestaâ€ leikkauksen. Algoritmi saa
      * siis parametrinaan kolme
      * tietorakennekirjastomme joukkoa (TraSet) ja muodostaa uuden joukon niistÃ¤ alkioista jotka kuuluvat tÃ¤smÃ¤lleen
      * kahteen syÃ¶tejoukoista. Mukana ei siis ole niitÃ¤ alkioita jotka kuuluvat vain yhteen syÃ¶tejoukoista,
@@ -51,9 +51,7 @@ public class TRAI_21_18_ellikau {
      * Ã¤lÃ¤kÃ¤ kÃ¤ytÃ¤ apuna kuvausta (Map) tai
      * Javan va- kiokirjaston joukkoa (Set). VihjeitÃ¤: voit ottaa joukoista kopioita,
      * kÃ¤ytÃ¤ joukko-operaatioita, ei
-     * kannata lÃ¤hteÃ¤ iteroimaan joukkoja alkioittain. MikÃ¤ on algoritmisi aikavaativuus
-     * kun TraSet:n operaatioiden
-     * aikavaativuus on kuten vastaavilla TreeSet -operaatioilla?
+     * kannata lÃ¤hteÃ¤ iteroimaan joukkoja alkioittain.
      *
      * @param A   syÃ¶tejoukko
      * @param B   syÃ¶tejoukko
@@ -65,18 +63,18 @@ public class TRAI_21_18_ellikau {
         //Aikavaativuus luokka O(nlogn)
         //verrataan settien elementtejä A:han jotta saadaan 2x 2 listan yhteiset alkiot
         TraSet<E> P = new TraSet();
-        P.addAll(A.intersection(B));    //nlogn
-        P.addAll(A.intersection(C));    //nlogn
+        P.addAll(A.intersection(B));    
+        P.addAll(A.intersection(C));    
         //verrataan onko alkioita kolmatta kertaa. jos on, poistetaan listalta, jos ei niin lisätään uusia
         for (E x :
-                C.intersection(B)) {    //? nlogn
-            if(P.contains(x))         //logn
-                P.remove(x);         //logn
+                C.intersection(B)) {    
+            if(P.contains(x))         
+                P.remove(x);        
             else
-                P.add(x);         //logn
+                P.add(x);         
         }
-        return P;         //1
-    } // kaksiKolmesta()
+        return P;      
+    }
 
 
 } // class TraI_21_t18
