@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-public class TRAI_21_X3_ellikau implements TRAI_21_X3 {
+public class TRAI_21_X3_ellikau {
     //  ^^^^^ oma tunnus tÃ¤hÃ¤n
 
     /**
@@ -33,7 +33,6 @@ public class TRAI_21_X3_ellikau implements TRAI_21_X3 {
      * @param A syÃ¶telista
      * @return poistettujen mÃ¤Ã¤rÃ¤
      */
-    @Override
     public <E> int poistaPerakkaisetDuplikaatit(LinkedList<E> A) {
         ListIterator<E> la = A.listIterator();
 
@@ -56,7 +55,7 @@ public class TRAI_21_X3_ellikau implements TRAI_21_X3 {
             prev = nykyinen;
         }
 
-        /*
+        
         while (la.hasNext()){               //O(n)
             Object oa = la.next();          //(1)
 
@@ -78,7 +77,7 @@ public class TRAI_21_X3_ellikau implements TRAI_21_X3 {
             }
         }
 
-         */
+         
         return poistettuja;
     }
 }

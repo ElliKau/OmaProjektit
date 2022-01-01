@@ -4,13 +4,12 @@ import fi.uef.cs.tra.BTreeNode;
 // TRAI_21_t13.java.java SJ
 
 /**
- * 13. Kirjoita algoritmi, joka lisÃ¤Ã¤ sisÃ¤jÃ¤rjestyksessÃ¤ olevaan binÃ¤Ã¤ripuuhun uuden solmun siten, ettÃ¤ puu sÃ¤ilyy
+ * Kirjoita algoritmi, joka lisÃ¤Ã¤ sisÃ¤jÃ¤rjestyksessÃ¤ olevaan binÃ¤Ã¤ripuuhun uuden solmun siten, ettÃ¤ puu sÃ¤ilyy
  * sisÃ¤jÃ¤rjestyksessÃ¤. Jos sama alkio (.equals()) oli jo puussa, niin alkiota ei lisÃ¤tÃ¤ puuhun. Parametreina puu ja
  * alkio. Algoritmi luo uuden solmun jos lisÃ¤ys tehdÃ¤Ã¤n.  Algoritmi palauttaa totuusarvon lisÃ¤ttiinkÃ¶ alkio vai ei.
- * Algoritmin toiminta kÃ¤ydÃ¤Ã¤n lÃ¤pi luennolla. Aikavaativuus?
  **/
 
-// Tarvitset projektiin (tai komentoriville) TRA-kirjaston Moodlesta.
+// Tarvitset projektiin (tai komentoriville) TRA-kirjaston.
 
 import fi.uef.cs.tra.BTree;
 import fi.uef.cs.tra.BTreeNode;
@@ -49,7 +48,7 @@ public class TRAI_21_t13_ellikau {
 
 
     /**
-     * 13. LisÃ¤ys sisÃ¤jÃ¤rjestettyyn binÃ¤Ã¤ripuuhun.
+     * LisÃ¤ys sisÃ¤jÃ¤rjestettyyn binÃ¤Ã¤ripuuhun.
      * LisÃ¤Ã¤ alkion x binÃ¤Ã¤ripuuhun jollei sitÃ¤ siellÃ¤ ennestÃ¤Ã¤n ole.
      * @param T binÃ¤Ã¤ripuu
      * @param x lisÃ¤ttÃ¤vÃ¤ alkio
@@ -58,13 +57,7 @@ public class TRAI_21_t13_ellikau {
      *  Kirjoita algoritmi joka lisää sisäjärjestyksessä olevaan binääripuuhun uuden solmun siten,
      * että puu säilyy sisäjärjestyksessä. Jos sama alkio (.equals()) oli jo puussa, niin alkiota ei
      * lisätä puuhun. Parametreina puu ja alkio. Algoritmi luo uuden solmun jos lisäys tehdään.
-     * Algoritmi palauttaa totuusarvon lisättiinkö alkio vai ei. Algoritmin toiminta käydään läpi
-     * luennolla. Aikavaativuus?
-     * -----
-     *AIKAVAATIVUUS:
-     *  puusta tulee O(6) koska korkeus on 6
-     *  hakeminen lisääminen ja poisto on O(logn)
-     *  puu vaatisi tasapainottamista ollakseen tehokkaampi
+     * Algoritmi palauttaa totuusarvon lisättiinkö alkio vai ei.
      *
      */
     public static <E extends Comparable<? super E>>
