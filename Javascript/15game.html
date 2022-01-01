@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Making a 15-game, where there is one empty box that you can move left or right, down or up.
+    Goal is to get the numbers in order, from one through to 15 with the bottom right box being empty.
+    Good luck.-->
+    <script>
+        var tyhja = "44";
+        var siirtoja = 0;
+
+        $(document).ready(function () {
+            $("#ilmoitus").hide(1);
+
+            // Logic of moving the empty box, and changing colors with it
+            $("td").click(function (event) {
+                painettu = event.target.id;
+                var numero = $(this).text();
+                console.log("painoit id: " + painettu + ", numeroa: " + $(this).text() + ", Abs tulos: " + Math.abs(tyhja - painettu));
+                if (Math.abs(tyhja - painettu) == 10 || Math.abs(tyhja - painettu) == 1) {
+
+                    siirtoja++;
+                    var takavari = $("#" + painettu).css("background-color");
+                    var fontti = $("#" + painettu).css("color");
+                    var tyhjavari = $("#" + tyhja).css("background-color");
+
+                    //Moving the color of the button as clicked moves
+                    if (numero % 2 == 0) {
+                        $("#" + tyhja).css({ background: "rgb(255,0,0)" });
+                        $("#" + tyhja).css({ color: "rgb(255,255,255)" });
+                        if ($(tyhjavari === "rgb(255, 255, 255)"))
+                            $("#" + painettu).css({ background: "rgb(255,255,255)" });
+                    } else {
+                        $("#" + tyhja).css({ background: "rgb(255,255,255)" });
+                        $("#" + tyhja).css({ color: "rgb(0,0,0)" });
+                    }
+                    $(this).text("");
+                    $("#" + tyhja).text(numero);
+                    tyhja = painettu;
+
+                    tarkistaVoitto();
+                } else {
+                    //if wrong one is pressed
+                    $("#ilmoitus").text("Wrong place");
+                    $("#ilmoitus").fadeIn(100).animate({ right: '-=30px' }).animate({ right: '+=30px' }).fadeOut(100);
+                }
+            });
+        });
+
+    </script>
+    <title>15-peli</title>
+    <style>
+        td {
+
+            border: solid rgba(2, 2, 2, 0.7) 2px;
+            border-radius: 5px;
+            width: 70px;
+            height: 50px;
+            margin: 20 px;
+            padding: 15px;
+        }
+        body {
+            height: 100%;
+            background-image: linear-gradient( rgb(44, 37, 37),  rgb(151, 151, 151), rgb(255, 255, 255));
+            background-repeat:no-repeat ;
+            background-attachment: fixed;
+        }
+
+        table {
+            margin: auto;
+            padding-top: 10%;
+        }
+
+        th, tfoot,
+        h1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        h1 {
+            width: 50%;
+            margin: auto;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px rgb(77, 77, 77);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <table id="taulukko">
+            <th style="font-size:x-large; text-shadow: 1px 1px gray;">15-Game</th>
+
+            <tr>
+                <td id="11">1</td>
+                <td id="12">2</td>
+                <td id="13">3</td>
+                <td id="14">4</td>
+            </tr>
+            <tr>
+                <td id="21">5</td>
+                <td id="22">6</td>
+                <td id="23">7</td>
+                <td id="24">8</td>
+            </tr>
+            <tr>
+                <td id="31">9</td>
+                <td id="32">10</td>
+                <td id="33">11</td>
+                <td id="34">12</td>
+            </tr>
+            <tr>
+                <td id="41">13</td>
+                <td id="42">14</td>
+                <td id="43">15</td>
+                <td id="44" class="tyhja"></td>
+            </tr>
+            <button type="button" id="btnVoitto" onclick="voititko()">Emulate a win</button>
+            <tfoot id="ilmoitus" style="color: rgb(255, 0, 0); position:relative; "></tfoot>
+        </table>
+        <div id="divi2"></div>
+
+
+    </div>
+    <script>
+
+        let numerot = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+
+        //Setting numbers to boxes
+        $("#taulukko").each(function () {
+            $(this).find('td').each(function () {
+                var rnd = numerot[Math.floor(Math.random() * numerot.length)]; 
+                numerot = numerot.filter(item => item !== rnd);
+
+                if (this.id == 44)
+                    $(this).text("");
+                else
+                    $(this).text(rnd);
+
+                //Changing colors
+                if (rnd % 2 == 0) {
+                    $(this).css({ background: "rgb(255, 0, 0)" });
+                    $(this).css({ color: "rgb(255, 255, 255)" });
+                }
+                else{
+                    $(this).css({ background: "rgb(255, 255,255)" });
+                    $(this).css({ color: "rgb(0,0,0)" });
+                }
+            });
+        });
+
+        //Testing winning conditions
+        function voititko() {
+            alert("You can now move one box to win");
+            let p = 1;
+            $("#taulukko").each(function () {
+                $(this).find('td').each(function () {
+                    if (this.id == 43) {
+                        $(this).text("");
+                        tyhja = "43";
+                    } else {
+                        $(this).text(p);
+                        p++;
+                    }
+
+                    if ($(this).text() % 2 == 0) {
+                        $(this).css({ background: "rgb(255, 0, 0)" });
+                        $(this).css({ color: "rgb(255, 255, 255)" });
+                    }
+                    else {
+                        $(this).css({ background: "rgb(255,255,255)" });
+                        $(this).css({ color: "rgb(0,0,0)" });
+                    }
+                    $("#" + tyhja).css({ background: "rgb(255,255,255)" });
+                });
+
+            });
+        }
+
+        //Checking for winning conditions
+        function tarkistaVoitto() {
+            var voittoCounter = 0;
+            var b = 1;
+            $("#taulukko").each(function () {
+                $(this).find('td').each(function () {
+                    if ($(this).text() == b) {
+                        voittoCounter++;
+                    }
+                    if (this.id == 44 && $(this).text() == "") {
+                        console.log("yes 44")
+                    }
+                    b++;
+                });
+            });
+            if (voittoCounter == 15) {
+                $("#taulukko").fadeOut(500);
+                $("#btnVoitto").hide(10);
+                $("#divi2").append(`<h1 id ="voitto"> Congratulations!</h1>`);
+                $("#divi2").append(`<h1 id ="siirrot"> You used ${siirtoja} moves</h1>`);
+                $("#divi2").children("#voitto").hide().show(1000);
+                $("#divi2").children("#siirrot").hide().show(1000);
+
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
