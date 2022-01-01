@@ -20,7 +20,7 @@ public class TRAI_21_X5_ellikau implements TRAI_21_X5 {
      * Jos mikÃ¤Ã¤n alkio ei tÃ¤ytÃ¤ ehtoa, palautetaan tyhjÃ¤ joukko.
      *----
      * Kirjoita algoritmi joka hakee joukkojen ”kaksi kolmesta” leikkauksen. Algoritmi saa siis
-     * parametrinaan kolme joukkoa (java.util.Set) ja muodostaa uuden joukon niistä alkioista jotka
+     * parametrinaan kolme joukkoa (java.util.Set) ja muodostaa uuden joukon niistä alkioista jotka
      * kuuluvat täsmälleen kahteen syötejoukoista. Mukana ei siis ole niitä alkioita jotka kuuluvat
      * vain yhteen syötejoukoista, eikä niitä alkioita jotka kuuluvat kaikkiin syötejoukkoihin. Älä
      * muuta syötejoukkoja äläkä käytä apuna kuvausta (Map) tai tietorakennekirjastomme joukkoa
