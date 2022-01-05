@@ -1,0 +1,14 @@
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\bin\Debug\Ohjelmointi2 Lopputyö.exe.config
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\bin\Debug\Ohjelmointi2 Lopputyö.exe
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\bin\Debug\Ohjelmointi2 Lopputyö.pdb
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\obj\Debug\Ohjelmointi2_Lopputyö.Peli.resources
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\obj\Debug\Ohjelmointi2_Lopputyö.Properties.Resources.resources
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\obj\Debug\Ohjelmointi2 Lopputyö.csproj.GenerateResource.cache
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\obj\Debug\Ohjelmointi2 Lopputyö.csproj.CoreCompileInputs.cache
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\obj\Debug\Ohjelmointi2 Lopputyö.exe
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\obj\Debug\Ohjelmointi2 Lopputyö.pdb
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\obj\Debug\Ohjelmointi2_Lopputyö.Aloitusvalikko.resources
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\obj\Debug\Ohjelmointi2 Lopputyö.csproj.CopyComplete
+C:\Users\Elmer\source\repos\Ohjelmointi2 Lopputyö\Ohjelmointi2 Lopputyö\obj\Debug\Ohjelmointi2 Lopputyö.csproj.AssemblyReference.cache
