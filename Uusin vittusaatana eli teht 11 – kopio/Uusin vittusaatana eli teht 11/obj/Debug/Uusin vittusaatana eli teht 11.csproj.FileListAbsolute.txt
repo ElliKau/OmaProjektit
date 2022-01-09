@@ -1,0 +1,11 @@
+C:\Users\Elmer\source\repos\Uusin vittusaatana eli teht 11\Uusin vittusaatana eli teht 11\bin\Debug\Uusin vittusaatana eli teht 11.exe.config
+C:\Users\Elmer\source\repos\Uusin vittusaatana eli teht 11\Uusin vittusaatana eli teht 11\bin\Debug\Uusin vittusaatana eli teht 11.exe
+C:\Users\Elmer\source\repos\Uusin vittusaatana eli teht 11\Uusin vittusaatana eli teht 11\bin\Debug\Uusin vittusaatana eli teht 11.pdb
+C:\Users\Elmer\source\repos\Uusin vittusaatana eli teht 11\Uusin vittusaatana eli teht 11\obj\Debug\Uusin vittusaatana eli teht 11.csprojAssemblyReference.cache
+C:\Users\Elmer\source\repos\Uusin vittusaatana eli teht 11\Uusin vittusaatana eli teht 11\obj\Debug\Uusin_vittusaatana_eli_teht_11.Form1.resources
+C:\Users\Elmer\source\repos\Uusin vittusaatana eli teht 11\Uusin vittusaatana eli teht 11\obj\Debug\Uusin_vittusaatana_eli_teht_11.Properties.Resources.resources
+C:\Users\Elmer\source\repos\Uusin vittusaatana eli teht 11\Uusin vittusaatana eli teht 11\obj\Debug\Uusin vittusaatana eli teht 11.csproj.GenerateResource.cache
+C:\Users\Elmer\source\repos\Uusin vittusaatana eli teht 11\Uusin vittusaatana eli teht 11\obj\Debug\Uusin vittusaatana eli teht 11.csproj.CoreCompileInputs.cache
+C:\Users\Elmer\source\repos\Uusin vittusaatana eli teht 11\Uusin vittusaatana eli teht 11\obj\Debug\Uusin vittusaatana eli teht 11.exe
+C:\Users\Elmer\source\repos\Uusin vittusaatana eli teht 11\Uusin vittusaatana eli teht 11\obj\Debug\Uusin vittusaatana eli teht 11.pdb
+C:\Users\Elmer\source\repos\Uusin vittusaatana eli teht 11\Uusin vittusaatana eli teht 11\obj\Debug\Uusin_vittusaatana_eli_teht_11.Form2.resources
