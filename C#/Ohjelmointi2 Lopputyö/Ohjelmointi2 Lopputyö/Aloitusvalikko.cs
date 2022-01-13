@@ -43,9 +43,11 @@ namespace Ohjelmointi2_Lopputyö
         // heti alkuun haetaan tiedostosta JSON Pelaajatiedot
         private void Aloitusvalikko_Load(object sender, EventArgs e)
         {
-            if (File.Exists(@"c:/Heittotxt/Muistipelaajat.json"))
+            var path2 = Path.Combine(Directory.GetCurrentDirectory(), "\\Muistipelaajat.txt");
+            //string path = @"c:/Heittotxt/Muistipelaajat.json";
+            if (File.Exists(path2))
             {
-                using (StreamReader rr = new StreamReader(@"c:/Heittotxt/Muistipelaajat.json"))
+                using (StreamReader rr = new StreamReader(path2))
                 {
                     string json = rr.ReadToEnd();
                     pelaajatiedot = JsonConvert.DeserializeObject<List<Pelaajat>>(json);
@@ -55,7 +57,7 @@ namespace Ohjelmointi2_Lopputyö
                 }
             }
             else
-                MessageBox.Show("ei löydy c: Heittotxt/Muistipelaajat.json");
+                MessageBox.Show("Ei löydy tiedostoa " + path2);
 
             groupPelaajat.ForeColor = Color.FromArgb(192, 255, 192);
             groupVaikeus.ForeColor = Color.FromArgb(192, 255, 192);
